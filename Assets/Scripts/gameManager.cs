@@ -4,6 +4,8 @@
 using UnityEngine;
 using System.Collections;
 
+//Jack was here
+
 public class gameManager : MonoBehaviour {
 	// Declare properties
 	private static gameManager instance;
