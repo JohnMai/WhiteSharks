@@ -16,33 +16,31 @@ public class journal : MonoBehaviour {
 			return instance;
 		}
 	}
-	//PoI buttons
-	public GameObject poI2;
 
 	public List<NPC> personsOfInterest;
 
-	//Test case elements of NPC type
+	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
 	private string emptyName;
-	public NPC npc1;
-	public NPC npc2;
-	public NPC npc3;
 
 	//Grab view tab buttons. Will change to use gameobject find.
 	public GameObject viewTab1;
 	public GameObject viewTab2;
 	public GameObject viewTab3;
 
-	//Grab buttons and textfield from view. Will change to use gameobject find.
+	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
+	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
+	private static List<GameObject> objectButtonList;
 	public GameObject poiButton1;
 	public GameObject poiButton2;
 	public GameObject poiButton3;
-	public UILabel poiName;
-	public UILabel poiDescription;
+	public UILabel nameLabel;
+	public UILabel descriptionLabel;
 
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad(GameObject.Find("UI Root"));
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
@@ -50,14 +48,19 @@ public class journal : MonoBehaviour {
 		personsOfInterest = GameManager.npcList;
 
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
-		/*UIEventListener.Get (viewTab1).onClick += this.onTabClick;
-		UIEventListener.Get (viewTab2).onClick += this.onTabClick;
-		UIEventListener.Get (viewTab3).onClick += this.onTabClick;*/
+		UIEventListener.Get (viewTab1).onClick += this.onClick;
+		UIEventListener.Get (viewTab2).onClick += this.onClick;
+		UIEventListener.Get (viewTab3).onClick += this.onClick;
 
 		//Listens for button presses in poiView and runs onClick with button clicked as parameter.
 		UIEventListener.Get(poiButton1).onClick += this.onClick;
 		UIEventListener.Get(poiButton2).onClick += this.onClick;
 		UIEventListener.Get(poiButton3).onClick += this.onClick;
+
+		viewTabList = new List<GameObject>();
+		viewTabList.Add(viewTab1);
+		viewTabList.Add(viewTab2);
+		viewTabList.Add(viewTab3);
 
 		//List of person of interest portrait buttons.
 		poiButtonList = new List<GameObject>();
@@ -68,53 +71,39 @@ public class journal : MonoBehaviour {
 		initPoIView ();
 	}
 
-	void Update () {
-	}
-
-	//Change journal view by tab buttons.
-	//Should have onClick moved into it to provide one general on click event for any button if possible.
-	void onTabClick(GameObject button){
-		if (button == viewTab1) {
-		} 
-		else if (button == viewTab2) {
+	//Single onclick function for any button in the journal.
+	void onClick(GameObject button){
+		if(viewTabList != null && viewTabList.Contains(button)){
+			Debug.Log ("won't happen yet");
+		}
+		else if(poiButtonList.Contains(button)){
+			changePOI(poiButtonList.IndexOf(button));
+			Debug.Log ("poiButton!");
 		}
 		else {
+			Debug.Log ("objectbutton!");
 		}
 	}
 
-	//Needs clean up (repetitive). Needs to be general to work with both PoI view and object view
-	void onClick(GameObject button){
-		if (button == poiButton1) {
-			Debug.LogError(GameManager.npcList[0].isVisible());
-			if(GameManager.npcList[0].isVisible()){
-				poiName.text = personsOfInterest[0].getElementName();
-				poiDescription.text = personsOfInterest[0].getDescription();
-			}
-			else {
-				poiName.text = emptyName; 
-				poiDescription.text = emptyName;
-			}
+	//----- Button type functions
+	//Changes view when view tab is clicked.
+	void changeView(int viewNumber){
+	}
+
+	//Changes PoI when a PoI portrait is clicked.
+	void changePOI(int poiNumber){
+		if(GameManager.npcList[poiNumber].isVisible()){
+			nameLabel.text = personsOfInterest[poiNumber].getElementName();
+			descriptionLabel.text = personsOfInterest[poiNumber].getDescription();
 		}
-		else if(button == poiButton2) {
-			if(GameManager.npcList[1].isVisible()){
-				poiName.text = personsOfInterest[1].getElementName();
-				poiDescription.text = personsOfInterest[1].getDescription();
-			}
-			else {
-				poiName.text = emptyName; 
-				poiDescription.text = emptyName;
-			}
+		else {
+			nameLabel.text = emptyName; 
+			descriptionLabel.text = emptyName;
 		}
-		else if(button == poiButton3) {
-			if(GameManager.npcList[2].isVisible()){
-				poiName.text = personsOfInterest[2].getElementName();
-				poiDescription.text = personsOfInterest[2].getDescription();
-			}
-			else {
-				poiName.text = emptyName; 
-				poiDescription.text = emptyName;
-			}
-		}
+	}
+
+	//Changes object/weapon being viewed when portrait is clicked.
+	void changeObject(int objectNumber){
 	}
 
 	//Initialize PoI view.
@@ -122,7 +111,7 @@ public class journal : MonoBehaviour {
 		for (int i = 0; i < personsOfInterest.Count; i++) {
 			Debug.Log (i);
 			if(personsOfInterest[i] != null){
-				Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
+				//Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
 				//GetComponent is slow, will use gameobject find component in children in later iteration.
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 			}
