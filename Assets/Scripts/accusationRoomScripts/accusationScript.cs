@@ -11,17 +11,24 @@ public class accusationScript : MonoBehaviour {
 	private int selectRoom = -1;
 
 	public GameObject mapButton1, mapButton2, suspectButton1, suspectButton2,
-	weaponButton1, weaponButton2, backButton, alexiaChat;
+	weaponButton1, weaponButton2, backButton;// alexiaChat;
 
 	private Color clear = Color.clear;
 	private Color original;
 
 	private string hint = "";
+	private string hint0 = "you're wrong, sweetie...";
+	private string hint1 = "you're on the right track...";
+	private string hint2 = "you're almost there...";
+	private string hint3 = "you solved it.";
 
-	//need a list of all the buttons here
+	//gonna need to do some calls to get this
+	//but for now default to 1
+	private int answerSuspect = 1;
+	private int answerWeapon = 1;
+	private int answerRoom = 1;
 
-	//then an array of strings for possible hints
-
+	
 	/* FUNCTIONS */
 
 	// Use this for initialization
@@ -41,9 +48,9 @@ public class accusationScript : MonoBehaviour {
 		weaponButton2.GetComponent<buttonScript>().setTypeNum(1, 1);
 		backButton = GameObject.Find("goBackButton");
 		backButton.GetComponent<buttonScript>().setTypeNum(3, 666);
-		alexiaChat = GameObject.Find("alexiaSays");
-		original = alexiaChat.GetComponent<SpriteRenderer>().color;
-		alexiaChat.GetComponent<SpriteRenderer>().color = clear;
+		//alexiaChat = GameObject.Find("alexiaSays");
+		//original = alexiaChat.GetComponent<SpriteRenderer>().color;
+		//alexiaChat.GetComponent<SpriteRenderer>().color = clear;
 
 		//guiText.font.material.color = Color.black;
 	}
@@ -89,13 +96,34 @@ public class accusationScript : MonoBehaviour {
 
 	public void OnMouseDown() {
 		if (Input.GetMouseButton(0)) {
-			alexiaChat.GetComponent<SpriteRenderer>().color = original;
-			hint = "you're wrong!";
+			//alexiaChat.GetComponent<SpriteRenderer>().color = original;
+			//hint = "you're wrong!";
+
+			//we have to generate a hint and set the chat to show
+			int progress = 0;
+			if (selectSuspect == answerSuspect) progress++;
+			if (selectRoom == answerRoom) progress++;
+			if (selectWeapon == answerWeapon) progress++;
+			if (progress == 0) {
+				hint = hint0;
+			}
+			else if (progress == 1) {
+				hint = hint1;
+			}
+			else if (progress == 2) {
+				hint = hint2;
+			}
+			else if (progress == 3) {
+				hint = hint3;
+			}
+			else {
+				print("shouldn't be reaching progress="+progress);
+			}
 		}
 	}
 
 	void OnGUI() {
 		GUI.contentColor = Color.black;
-		GUI.Label(new Rect(365, 30, 100, 100), hint);
+		GUI.Label(new Rect(365, 25, 100, 100), hint);
 	}
 }
