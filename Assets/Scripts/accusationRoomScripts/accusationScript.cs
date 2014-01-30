@@ -95,6 +95,7 @@ public class accusationScript : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.Label(new Rect(320, 30, 100, 100), hint);
+		GUI.contentColor = Color.black;
+		GUI.Label(new Rect(365, 30, 100, 100), hint);
 	}
 }
