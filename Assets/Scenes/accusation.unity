@@ -118,7 +118,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!61 &165345565
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -197,7 +196,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!61 &251878783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -276,7 +274,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!61 &499899205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -389,7 +386,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!1 &763237166
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +419,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!61 &763237168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -567,6 +562,7 @@ MonoBehaviour:
   weaponButton1: {fileID: 0}
   weaponButton2: {fileID: 0}
   backButton: {fileID: 0}
+  alexiaChat: {fileID: 0}
 --- !u!212 &1145713742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -892,7 +888,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!61 &1711802891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -960,7 +955,6 @@ MonoBehaviour:
   backButton1: {fileID: 0}
   backButton2: {fileID: 0}
   backButton3: {fileID: 0}
-  alexiaChat: {fileID: 0}
 --- !u!212 &1824227278
 SpriteRenderer:
   m_ObjectHideFlags: 0
