@@ -38,7 +38,11 @@ public class journal : MonoBehaviour {
 	public UILabel nameLabel;
 	public UILabel descriptionLabel;
 
-	// Use this for initialization
+	//Grab view references. Will likely be changed in a similar fashion as the above.
+	public GameObject poiView;
+	public GameObject mapView;
+	//public GameObject objectView;
+	
 	void Start () {
 		DontDestroyOnLoad(GameObject.Find("UI Root"));
 		//Default name for "invisible" person of interest.
@@ -74,6 +78,7 @@ public class journal : MonoBehaviour {
 	//Single onclick function for any button in the journal.
 	void onClick(GameObject button){
 		if(viewTabList != null && viewTabList.Contains(button)){
+			changeView (viewTabList.IndexOf(button));
 			Debug.Log ("won't happen yet");
 		}
 		else if(poiButtonList.Contains(button)){
@@ -88,6 +93,21 @@ public class journal : MonoBehaviour {
 	//----- Button type functions
 	//Changes view when view tab is clicked.
 	void changeView(int viewNumber){
+		switch (viewNumber) {
+			case 0:
+				mapView.SetActive(false);
+				poiView.SetActive(true);
+				break;
+			case 1:
+				mapView.SetActive (false);
+				poiView.SetActive(true);
+				//Doesn't do anything yet. Should grab object view.
+				break;
+			case 2:
+				mapView.SetActive (true);
+				poiView.SetActive(false);
+				break;
+		}
 	}
 
 	//Changes PoI when a PoI portrait is clicked.
@@ -122,7 +142,8 @@ public class journal : MonoBehaviour {
 		}
 	}
 
-	public void changePoIView(NPC n){
+
+	/*public void changePoIView(NPC n){
 		//if (indexPoI <= MAX_NPC - 1) {
 		//	personsOfInterest[i]=n;
 			Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -130,5 +151,5 @@ public class journal : MonoBehaviour {
 		//	poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 		//}
 
-	}
+	}*/
 }
