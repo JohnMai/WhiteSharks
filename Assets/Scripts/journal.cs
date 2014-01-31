@@ -19,6 +19,7 @@ public class journal : MonoBehaviour {
 	}
 
 	public List<NPC> personsOfInterest;
+	public ArrayList weaponList;
 
 	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
@@ -33,18 +34,17 @@ public class journal : MonoBehaviour {
 	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
 	public static List<GameObject> objectButtonList;
-	public GameObject objectGrid; //will be used for PoI as well, reducing a butt load of code
-	public GameObject poiButton1;
-	public GameObject poiButton2;
-	public GameObject poiButton3;
+
+	public GameObject poiGrid;
+	public GameObject objectGrid;
+
 	public UILabel nameLabel;
 	public UILabel descriptionLabel;
-
-	//Grab view references. Will likely be changed in a similar fashion as the above.
+	
 	public GameObject poiView;
 	public GameObject mapView;
-	//public GameObject objectView;
 
+	//Destroys duplicate UI Roots.
 	void Awake () {
 		if(!j){
 			j = this;
@@ -56,37 +56,33 @@ public class journal : MonoBehaviour {
 	}
 	
 	void Start () {
-		//DontDestroyOnLoad(GameObject.Find("UI Root"));
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
-		//Person of interest list.
+		//Persons of interest list.
 		personsOfInterest = GameManager.npcList;
+
+		//Weapon list once that's ready.
+		//weaponList = GameManager.weaponList;
+
 
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
 		UIEventListener.Get (viewTab3).onClick += this.onClick;
-
-		//Listens for button presses in poiView and runs onClick with button clicked as parameter.
-		UIEventListener.Get(poiButton1).onClick += this.onClick;
-		UIEventListener.Get(poiButton2).onClick += this.onClick;
-		UIEventListener.Get(poiButton3).onClick += this.onClick;
-
+		//Want to get rid of this too.
 		viewTabList = new List<GameObject>();
 		viewTabList.Add(viewTab1);
 		viewTabList.Add(viewTab2);
 		viewTabList.Add(viewTab3);
 
 		//List of person of interest portrait buttons.
-		//Ass backwards, will use foreach child to grab button children.
 		poiButtonList = new List<GameObject>();
-		poiButtonList.Add (poiButton1);
-		poiButtonList.Add (poiButton2);
-		poiButtonList.Add (poiButton3);
+		objectButtonList = new List<GameObject>();
 
 		initPoIView ();
 		initObjView ();
+		changeView (0);
 	}
 
 	//Single onclick function for any button in the journal.
@@ -99,34 +95,42 @@ public class journal : MonoBehaviour {
 			changePOI(poiButtonList.IndexOf(button));
 			Debug.Log ("poiButton!");
 		}
-		else {
+		else if (objectButtonList.Contains (button)){
+			changeObject(objectButtonList.IndexOf(button));
 			Debug.Log ("objectbutton!");
 		}
 	}
 
 	//----- Button type functions
 	//Changes view when view tab is clicked.
+	//Will make helper function for grid/view SetActive.
 	void changeView(int viewNumber){
 		switch (viewNumber) {
-			case 0:
+			case 0://PoI
 				mapView.SetActive(false);
 				poiView.SetActive(true);
+				objectGrid.SetActive(false);
+				poiGrid.SetActive(true);
 				break;
-			case 1:
+			case 1://Object
 				mapView.SetActive (false);
 				poiView.SetActive(true);
-				//Doesn't do anything yet. Should grab object view.
+				objectGrid.SetActive(true);
+				poiGrid.SetActive(false);
 				break;
-			case 2:
+			case 2://Map
 				mapView.SetActive (true);
 				poiView.SetActive(false);
+				objectGrid.SetActive(false);
+				poiGrid.SetActive(false);
 				break;
 		}
+		clearLabels ();
 	}
 
 	//Changes PoI when a PoI portrait is clicked.
 	void changePOI(int poiNumber){
-		if(GameManager.npcList[poiNumber].isVisible()){
+		if(personsOfInterest[poiNumber].isVisible()){
 			nameLabel.text = personsOfInterest[poiNumber].getElementName();
 			descriptionLabel.text = personsOfInterest[poiNumber].getDescription();
 		}
@@ -138,38 +142,47 @@ public class journal : MonoBehaviour {
 
 	//Changes object/weapon being viewed when portrait is clicked.
 	void changeObject(int objectNumber){
+		//Code for grabbing weapon names and descriptions.
+		/*if(weaponList[objectNumber].isVisible()){
+			nameLabel.text = weaponList[objectNumber].getElementName();
+			descriptionLabel.text = weaponList[objectNumber].getDescription();
+		}
+		else {
+			nameLabel.text = emptyName; 
+			descriptionLabel.text = emptyName;
+		}*/
 	}
 
 	//Initialize PoI view.
 	public void initPoIView(){
+		//Add buttons to poi button list and put them in UI event listener.
+		foreach (Transform child in poiGrid.transform){
+			UIEventListener.Get(child.gameObject).onClick += this.onClick;
+			poiButtonList.Add(child.gameObject);
+		}
+
 		for (int i = 0; i < personsOfInterest.Count; i++) {
-			//Debug.Log (i);
 			if(personsOfInterest[i] != null){
-				//Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
-				//GetComponent is slow, will use gameobject find component in children in later iteration.
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 			}
 			else {
-				//Debug.LogError("Im null");
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = emptyPortrait;
 			}
 		}
 	}
 
-	//Guinea pig for better code. If this work, PoI will init this way as well getting rid of some garbage code;
+	//Initialize obj view.
 	public void initObjView(){
+		//Add buttons to obj button list and put them in UI event listener.
 		foreach (Transform child in objectGrid.transform){
-			Debug.Log (child.gameObject);
-			//objectButtonList.Add(child.gameObject);
+			UIEventListener.Get(child.gameObject).onClick += this.onClick;
+			objectButtonList.Add(child.gameObject);
 		}
 	}
-	/*public void changePoIView(NPC n){
-		//if (indexPoI <= MAX_NPC - 1) {
-		//	personsOfInterest[i]=n;
-			Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-		//	Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
-		//	poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
-		//}
 
-	}*/
+	//Clear description labels. Might rename and add obj/poi grid on/off.
+	void clearLabels(){
+		nameLabel.text = "";
+		descriptionLabel.text = "";
+	}
 }
