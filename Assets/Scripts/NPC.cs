@@ -13,11 +13,12 @@ public class NPC : CaseElement {
 	public BoxCollider2D box;
 
 	//NPC specific data fields
-	public string weaponProficiency;	//What kinds of weapons is the NPC skilled with
+	public Category weaponProficiency;	//What kinds of weapons is the NPC skilled with
 	public bool highClass;				//Does the NPC belong to the higher class society (top floors) or not?
 	public ArrayList alibi;				//A set of info that represents an alibi, requires another npc, location
 	public ArrayList animations;		//An array list of sprites representing the animation
 	public string scene;
+
 
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
@@ -27,16 +28,21 @@ public class NPC : CaseElement {
 			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 		}
 	}
+	void Start(){
+		playerObj = Scene.player;
+	}
 	//switch the displaying order of the npc. 
 	void Update () {
-		/*if (transform.position.y < playerObj.transform.position.y) {
-			renderer.sortingLayerName= "foreground";
-			renderer.sortingOrder = 2;
-			box.isTrigger = true;
+		if (playerObj != null){
+			if (transform.position.y < playerObj.transform.position.y) {
+				renderer.sortingLayerName= "foreground";
+				renderer.sortingOrder = 2;
+				box.isTrigger = true;
+			}
+			else{
+				renderer.sortingLayerName= "middleground";
+				box.isTrigger = false;
+			}
 		}
-		else{
-			renderer.sortingLayerName= "middleground";
-			box.isTrigger = false;
-		}*/
 	}
 }
