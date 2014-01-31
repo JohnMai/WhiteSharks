@@ -6,6 +6,7 @@ public class journal : MonoBehaviour {
 
 	private static journal instance;
 	private static int MAX_NPC = 3;
+	private static journal j;
 
 	public static journal Instance {
 		get {
@@ -31,7 +32,8 @@ public class journal : MonoBehaviour {
 	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
 	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
-	private static List<GameObject> objectButtonList;
+	public static List<GameObject> objectButtonList;
+	public GameObject objectGrid; //will be used for PoI as well, reducing a butt load of code
 	public GameObject poiButton1;
 	public GameObject poiButton2;
 	public GameObject poiButton3;
@@ -42,9 +44,19 @@ public class journal : MonoBehaviour {
 	public GameObject poiView;
 	public GameObject mapView;
 	//public GameObject objectView;
+
+	void Awake () {
+		if(!j){
+			j = this;
+			DontDestroyOnLoad(gameObject);
+		}
+		else {
+			Destroy (gameObject);
+		}
+	}
 	
 	void Start () {
-		DontDestroyOnLoad(GameObject.Find("UI Root"));
+		//DontDestroyOnLoad(GameObject.Find("UI Root"));
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
@@ -67,12 +79,14 @@ public class journal : MonoBehaviour {
 		viewTabList.Add(viewTab3);
 
 		//List of person of interest portrait buttons.
+		//Ass backwards, will use foreach child to grab button children.
 		poiButtonList = new List<GameObject>();
 		poiButtonList.Add (poiButton1);
 		poiButtonList.Add (poiButton2);
 		poiButtonList.Add (poiButton3);
 
 		initPoIView ();
+		initObjView ();
 	}
 
 	//Single onclick function for any button in the journal.
@@ -129,20 +143,26 @@ public class journal : MonoBehaviour {
 	//Initialize PoI view.
 	public void initPoIView(){
 		for (int i = 0; i < personsOfInterest.Count; i++) {
-			Debug.Log (i);
+			//Debug.Log (i);
 			if(personsOfInterest[i] != null){
 				//Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
 				//GetComponent is slow, will use gameobject find component in children in later iteration.
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 			}
 			else {
-				Debug.LogError("Im null");
+				//Debug.LogError("Im null");
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = emptyPortrait;
 			}
 		}
 	}
 
-
+	//Guinea pig for better code. If this work, PoI will init this way as well getting rid of some garbage code;
+	public void initObjView(){
+		foreach (Transform child in objectGrid.transform){
+			Debug.Log (child.gameObject);
+			//objectButtonList.Add(child.gameObject);
+		}
+	}
 	/*public void changePoIView(NPC n){
 		//if (indexPoI <= MAX_NPC - 1) {
 		//	personsOfInterest[i]=n;
