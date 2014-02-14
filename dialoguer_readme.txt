@@ -1,8 +1,11 @@
-Until I finish something for everyone, you can just use the test
-chat tree at ID 3
+The first 3 are tests files and here is the rest 
+of the trees with their respective IDs.
 4 = Liam O'Shea
 5 = Nina Walker
-That's it so far.
+6 = Josh Susach
+7 = Noel Alt
+8 = Peijun Shi
+9 = Carlos Franco
 
 The Global Variables with their IDs are at:
 Booleans:
