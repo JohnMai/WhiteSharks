@@ -2347,7 +2347,7 @@ the Dialoguer system!</text>
       <startPage>21</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>1896.12183</y>
+        <y>1928.116</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2408,7 +2408,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Josh What's your next line of questioning.</text>
+          <text>What's your next line of questioning.</text>
           <name />
           <portrait />
           <audio />
@@ -2431,10 +2431,10 @@ the Dialoguer system!</text>
           <choices>
             <string>What have you been doing today?</string>
             <string>Can you tell me about anyone else?</string>
-            <string>Harrass</string>
-            <string>Flatter</string>
-            <string>Personal Object</string>
-            <string>History</string>
+            <string>Listen, I report to people higher than you do, so let’s cut to the chase… OK?</string>
+            <string>Did you know that by helping the right person you could get a raise very quickly here?</string>
+            <string>[Present personal object]</string>
+            <string>What can you tell me about yourself?</string>
             <string>That's enough for now.</string>
           </choices>
           <waitType>Seconds</waitType>
@@ -2461,7 +2461,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the Cafe, relaxing inbetween shifts.</text>
+          <text>I believe I was patrolling the Café. Not necessarily my favorite part of the job.</text>
           <name />
           <portrait />
           <audio />
@@ -2557,7 +2557,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I'm afraid I don't know anything about her.</text>
+          <text>I’m sorry, I don’t know anyone by that name.</text>
           <name />
           <portrait />
           <audio />
@@ -2646,7 +2646,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the Gym, doing my daily work-out. </text>
+          <text>I was at the gym, I’m there daily.</text>
           <name />
           <portrait />
           <audio />
@@ -2691,7 +2691,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the office, doing some paperwork.</text>
+          <text>I was doing paperwork in the office. We do a lot of that too, just so you know.</text>
           <name />
           <portrait />
           <audio />
@@ -2868,7 +2868,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>He has V.S.'s.</text>
+          <text>There was a case of Vibro-Shurikens smuggled out of security recently. Josh is our prime suspect, be careful around him.</text>
           <name />
           <portrait />
           <audio />
@@ -2913,7 +2913,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>He has a metal pipe.</text>
+          <text>I’ve seen that kid holding a metal pipe down in the Belly, looking like he’s in some mob film. </text>
           <name />
           <portrait />
           <audio />
@@ -2958,7 +2958,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>He has an eSword.</text>
+          <text>People in the Belly somehow get their hands on eSwords every now and then and Josh is definitely one of them. I’m confident he’s not using it for good reasons.</text>
           <name />
           <portrait />
           <audio />
@@ -3355,7 +3355,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>A hateful greeting.</text>
+          <text>Detective, don’t you have actual criminals to go bother?</text>
           <name />
           <portrait />
           <audio />
@@ -3444,7 +3444,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>A normal greeting.</text>
+          <text>Detective.</text>
           <name />
           <portrait />
           <audio />
@@ -3489,7 +3489,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>A happy greeting!</text>
+          <text>How can I help you, Detective?</text>
           <name />
           <portrait />
           <audio />
@@ -3712,7 +3712,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>He has a laser pistol.</text>
+          <text>Guys got a laser on him. It’s legal for people to have them but it’s rare enough for it to cause suspicion. Make sure you don’t scare him.</text>
           <name />
           <portrait />
           <audio />
@@ -3757,7 +3757,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>radioactive ice cubes.</text>
+          <text>Reports say he’s selling radioactive ice cubes. That’s why I don’t drink anything with water in it.</text>
           <name />
           <portrait />
           <audio />
@@ -3799,7 +3799,7 @@ the Dialoguer system!</text>
           </position>
           <outs>
             <int>33</int>
-            <int>9</int>
+            <int>44</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3846,7 +3846,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I don't have to tell you anything.</text>
+          <text>I’m not sure if your rank is one I’m supposed to answer to.</text>
           <name />
           <portrait />
           <audio />
@@ -3891,7 +3891,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>HARRASS</text>
+          <text>What chase?</text>
           <name />
           <portrait />
           <audio />
@@ -3936,7 +3936,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>FLATTER</text>
+          <text>Maybe I should find them then.</text>
           <name />
           <portrait />
           <audio />
@@ -4067,7 +4067,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>HISTORY</text>
+          <text>I work security for the world’s biggest security company. Can’t say I always dreamed of being a top tier Mall Cop but the job is fulfilling.</text>
           <name />
           <portrait />
           <audio />
@@ -4200,7 +4200,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>How'd you find that?</text>
+          <text>How'd you find that? Must have got it from Mrs. Shi, huh? What a nice women.</text>
           <name />
           <portrait />
           <audio />
@@ -4245,7 +4245,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>What are you trying to show me?</text>
+          <text>[You don't have anything of interest.]</text>
           <name />
           <portrait />
           <audio />
@@ -4321,6 +4321,51 @@ the Dialoguer system!</text>
           <variableSetValue>0.5</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>44</id>
+          <type>TextPhase</type>
+          <position>
+            <x>549.016968</x>
+            <y>1309.079</y>
+          </position>
+          <outs>
+            <int>9</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>That little…! Sorry ma’am! That perp’s been on my watchlist for what seems like ages now.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables>
@@ -4352,8 +4397,8 @@ the Dialoguer system!</text>
       <name>Nina Walker</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>904.0564</x>
-        <y>1904.115</y>
+        <x>613.233</x>
+        <y>1668.09814</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4620,11 +4665,11 @@ the Dialoguer system!</text>
           <choices>
             <string>Where have you been today?</string>
             <string>What can you tell me about other people?</string>
-            <string>Harrass</string>
-            <string>Flatter</string>
-            <string>History</string>
-            <string>Personal Object</string>
-            <string>Go Back.</string>
+            <string>Aren’t you a little young to be out here by yourself? It’d be sooo easy for me to contact your supervisor...</string>
+            <string>I’ve read your reports from YAP, they’re impressive.</string>
+            <string>What’s it like in YAP?</string>
+            <string>[Present Personal Object]</string>
+            <string>We can talk later, thanks.</string>
           </choices>
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
@@ -4733,7 +4778,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the Gym.</text>
+          <text>I was at the gym, doing what do you think?</text>
           <name />
           <portrait />
           <audio />
@@ -4804,7 +4849,7 @@ the Dialoguer system!</text>
           <variableId>6</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>62.0037842</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -4822,7 +4867,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the Cafe.</text>
+          <text>I tried that new extreme caffeine mocha-late grande duplex viente at the Café.</text>
           <name />
           <portrait />
           <audio />
@@ -4867,7 +4912,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I was at the office,</text>
+          <text>As you might know if you’ve done your job, I’m a member of the YAP. I was at the office filling in some boring papers, as always. </text>
           <name />
           <portrait />
           <audio />
@@ -4909,7 +4954,7 @@ the Dialoguer system!</text>
           </position>
           <outs>
             <int>13</int>
-            <int>14</int>
+            <int>36</int>
             <int>5</int>
           </outs>
           <advanced>false</advanced>
@@ -4955,8 +5000,8 @@ the Dialoguer system!</text>
           <id>13</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>734.02124</x>
-            <y>981.992554</y>
+            <x>723.02124</x>
+            <y>982.992554</y>
           </position>
           <outs>
             <int>14</int>
@@ -4999,15 +5044,15 @@ the Dialoguer system!</text>
           <id>14</id>
           <type>TextPhase</type>
           <position>
-            <x>735.0254</x>
-            <y>1302.99548</y>
+            <x>715.0254</x>
+            <y>1299.99548</y>
           </position>
           <outs>
             <int>5</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I ain't telling you shit!</text>
+          <text>I’m sorry I wasn’t paying attention. Go ask someone else.</text>
           <name />
           <portrait />
           <audio />
@@ -5052,7 +5097,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I saw him use a V.S.</text>
+          <text>You know the security detail got a package of V.S.s lately. What will they use that for, even?</text>
           <name />
           <portrait />
           <audio />
@@ -5229,7 +5274,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I saw him use a metal pipe.</text>
+          <text>I’ve seen Liam hide a metal pipe away once. Either that was a lost and found item or he has something sketchy going on. Whatever, doesn’t matter to me.</text>
           <name />
           <portrait />
           <audio />
@@ -5274,7 +5319,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I saw him use an eSword.</text>
+          <text>I’ve seen him hold an eSword every now and then. It’s disturbing watching a security guard play with his sword while he’s on duty. </text>
           <name />
           <portrait />
           <audio />
@@ -5363,7 +5408,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>I saw him use a laser pistol.</text>
+          <text>He may be a guard but I saw him once with a laser pistol and like those things are scary. They’re silent and kill people instantly.</text>
           <name />
           <portrait />
           <audio />
@@ -5408,7 +5453,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>radioactive ice cubes.</text>
+          <text>I once saw him stash a package of radioactive ice cubes in his pockets. I don’t know where he got them from but I wouldn’t drink anything around him.</text>
           <name />
           <portrait />
           <audio />
@@ -5445,15 +5490,15 @@ the Dialoguer system!</text>
           <id>24</id>
           <type>TextPhase</type>
           <position>
-            <x>747.032959</x>
-            <y>1441.00159</y>
+            <x>736.032959</x>
+            <y>1446.00159</y>
           </position>
           <outs>
             <int>16</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Ok, I'll tell you....</text>
+          <text>Liam is a security guard for the escalator to the Belly. I kinda keep notes on his schedule so I can sneak down there. You seem cool so don’t tell anyone.</text>
           <name />
           <portrait />
           <audio />
@@ -5498,7 +5543,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>HARRASS! </text>
+          <text>Do you honestly think anyone cares?</text>
           <name />
           <portrait />
           <audio />
@@ -5586,7 +5631,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>FLATTER</text>
+          <text>It was nothing, don’t worry about it.</text>
           <name />
           <portrait />
           <audio />
@@ -5674,7 +5719,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>HISTORY</text>
+          <text>Well… I joined YAP six months ago, when my GAC scores came home. You know, I get it, it’s a great opportunity but… It’s so much work, you know? I just wanna have fun!</text>
           <name />
           <portrait />
           <audio />
@@ -5719,7 +5764,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>PERSONAL OBJECT</text>
+          <text>Personal Object -&gt;</text>
           <name />
           <portrait />
           <audio />
@@ -5895,7 +5940,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>How did you get this?</text>
+          <text>O M G, where did you find that?! Please, don’t tell Noel! </text>
           <name />
           <portrait />
           <audio />
@@ -5973,6 +6018,51 @@ the Dialoguer system!</text>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>36</id>
+          <type>TextPhase</type>
+          <position>
+            <x>407.1419</x>
+            <y>1319.05554</y>
+          </position>
+          <outs>
+            <int>12</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>I know a lot of Josh’s, nothing about their last names, and nothing about them.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables>
@@ -5996,10 +6086,10 @@ the Dialoguer system!</text>
     <DialogueEditorDialogueObject>
       <id>6</id>
       <name>Josh Susach</name>
-      <startPage xsi:nil="true" />
+      <startPage>0</startPage>
       <scrollPosition>
-        <x>646.0425</x>
-        <y>2000.00439</y>
+        <x>134.008179</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6010,8 +6100,8 @@ the Dialoguer system!</text>
             <y>15</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
-            <int xsi:nil="true" />
+            <int>1</int>
+            <int>2</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6054,11 +6144,11 @@ the Dialoguer system!</text>
             <y>334</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>5</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Angry greeting.</text>
+          <text>...</text>
           <name />
           <portrait />
           <audio />
@@ -6099,8 +6189,8 @@ the Dialoguer system!</text>
             <y>15</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
-            <int xsi:nil="true" />
+            <int>3</int>
+            <int>4</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6143,11 +6233,11 @@ the Dialoguer system!</text>
             <y>334</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>5</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Normal greeting.</text>
+          <text>Hey.</text>
           <name />
           <portrait />
           <audio />
@@ -6188,11 +6278,11 @@ the Dialoguer system!</text>
             <y>336</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>5</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Happy greeting!</text>
+          <text>Yo, wassup D.</text>
           <name />
           <portrait />
           <audio />
@@ -11761,5 +11851,5 @@ the Dialoguer system!</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>9</currentDialogueId>
+  <currentDialogueId>6</currentDialogueId>
 </DialogueEditorMasterObject>
