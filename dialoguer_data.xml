@@ -2346,8 +2346,8 @@ the Dialoguer system!</text>
       <name>Liam O'Shea</name>
       <startPage>21</startPage>
       <scrollPosition>
-        <x>900.054932</x>
-        <y>1997.07031</y>
+        <x>0</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2408,7 +2408,7 @@ the Dialoguer system!</text>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>What's your next line of questioning.</text>
+          <text>Josh What's your next line of questioning.</text>
           <name />
           <portrait />
           <audio />
@@ -4349,10 +4349,10 @@ the Dialoguer system!</text>
     <DialogueEditorDialogueObject>
       <id>5</id>
       <name>Nina Walker</name>
-      <startPage xsi:nil="true" />
+      <startPage>0</startPage>
       <scrollPosition>
-        <x>20.00122</x>
-        <y>246.015015</y>
+        <x>0</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5991,6 +5991,28 @@ the Dialoguer system!</text>
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
+    <DialogueEditorDialogueObject>
+      <id>6</id>
+      <name>Josh Susach</name>
+      <startPage xsi:nil="true" />
+      <scrollPosition>
+        <x>0</x>
+        <y>0</y>
+      </scrollPosition>
+      <phases />
+      <floats>
+        <variables />
+        <selection>0</selection>
+      </floats>
+      <strings>
+        <variables />
+        <selection>0</selection>
+      </strings>
+      <booleans>
+        <variables />
+        <selection>0</selection>
+      </booleans>
+    </DialogueEditorDialogueObject>
   </dialogues>
   <globals>
     <booleans>
@@ -6016,7 +6038,7 @@ the Dialoguer system!</text>
           <id>3</id>
         </DialogueEditorVariableObject>
       </variables>
-      <selection>3</selection>
+      <selection>0</selection>
     </booleans>
     <floats>
       <variables>
@@ -6027,7 +6049,7 @@ the Dialoguer system!</text>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
           <name>Liam_trustVal</name>
-          <variable>0</variable>
+          <variable>0.5</variable>
           <id>1</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
@@ -6056,7 +6078,7 @@ the Dialoguer system!</text>
           <id>6</id>
         </DialogueEditorVariableObject>
       </variables>
-      <selection>6</selection>
+      <selection>1</selection>
     </floats>
     <strings>
       <variables>
@@ -6138,5 +6160,5 @@ the Dialoguer system!</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>4</currentDialogueId>
+  <currentDialogueId>5</currentDialogueId>
 </DialogueEditorMasterObject>
