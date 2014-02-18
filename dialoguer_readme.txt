@@ -24,15 +24,15 @@ Floats:
 
 Strings:
 0 = archetype
-1 = Josh_Witness_Category
-2 = Josh_Alibi
-3 = Liam_Witness_Category
-4 = Liam_Alibi
-5 = Nina_Witness_Category
-6 = Nina_Alibi
-7 = Carlos_Witness_Category
-8 = Noel_Witness_Category
-9 = Peijun_Witness_Category
+1 = Liam_Witness_Category
+2 = Liam_Alibi
+3 = Nina_Witness_Category
+4 = Nina_Alibi
+5 = Josh_Witness_Category
+6 = Josh_Alibi
+7 = Noel_Witness_Category
+8 = Peijun_Witness_Category
+9 = Carlos_Witness_Category
 
 the Alibi strings need to be input as
 "Gym"

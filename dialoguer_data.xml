@@ -2346,8 +2346,8 @@ the Dialoguer system!</text>
       <name>Liam O'Shea</name>
       <startPage>21</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>16.0009766</y>
+        <x>576.035156</x>
+        <y>2002.118</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2625,14 +2625,14 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>4</variableId>
+          <variableId>2</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>90</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
-          <variableGetValue>Gym</variableGetValue>
+          <variableGetValue>0</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>6</id>
@@ -2759,10 +2759,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>4</variableId>
+          <variableId>2</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>90</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -2803,10 +2803,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>3</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>90</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -2847,10 +2847,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>3</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>90</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -3647,7 +3647,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>3</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
@@ -3691,7 +3691,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>3</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
@@ -4397,8 +4397,8 @@ the Dialoguer system!</text>
       <name>Nina Walker</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>738.0438</x>
+        <y>1878.11646</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4757,10 +4757,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>6</variableId>
+          <variableId>4</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>48.00293</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -4846,7 +4846,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>6</variableId>
+          <variableId>4</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
@@ -5165,7 +5165,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>5</variableId>
+          <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
@@ -5209,7 +5209,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>5</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -5253,7 +5253,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>5</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>62.0037842</y>
@@ -5387,7 +5387,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>5</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -5918,7 +5918,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>Boolean</variableType>
-          <variableId>2</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
@@ -6088,8 +6088,8 @@ the Dialoguer system!</text>
       <name>Josh Susach</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>880.0537</y>
+        <x>532.03</x>
+        <y>1938.1189</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6493,10 +6493,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>2</variableId>
+          <variableId>6</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>74.00452</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -6537,10 +6537,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>2</variableId>
+          <variableId>6</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>74.00452</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -6767,10 +6767,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>1</variableId>
+          <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>90</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -6811,10 +6811,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>1</variableId>
+          <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>90</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -6855,10 +6855,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>1</variableId>
+          <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>90</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -6899,10 +6899,10 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>1</variableId>
+          <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>90</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
@@ -7480,7 +7480,7 @@ the Dialoguer system!</text>
           <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>33</y>
           </variableScrollPosition>
           <variableSetEquation>Add</variableSetEquation>
           <variableSetValue>0.5</variableSetValue>
@@ -7658,7 +7658,7 @@ the Dialoguer system!</text>
           <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>33</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>0.5</variableSetValue>
@@ -7728,8 +7728,8 @@ the Dialoguer system!</text>
       <name>Noel Alt</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1144.06982</x>
-        <y>1222.074</y>
+        <x>852.052</x>
+        <y>758.950439</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8273,7 +8273,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>8</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -8317,7 +8317,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>8</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -8361,7 +8361,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>8</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -8405,7 +8405,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>8</variableId>
+          <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -9190,8 +9190,8 @@ the Dialoguer system!</text>
       <name>Peijun Shi</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1222.06543</x>
-        <y>946.0553</y>
+        <x>990.9573</x>
+        <y>992.9878</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -9649,7 +9649,7 @@ the Dialoguer system!</text>
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>33</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>LessThan</variableGetEquation>
@@ -9690,7 +9690,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>9</variableId>
+          <variableId>8</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -9734,7 +9734,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>9</variableId>
+          <variableId>8</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -9778,7 +9778,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>9</variableId>
+          <variableId>8</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -9822,7 +9822,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>9</variableId>
+          <variableId>8</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -10652,8 +10652,8 @@ the Dialoguer system!</text>
       <name>Carlos Franco</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1362.09473</x>
-        <y>960.0586</y>
+        <x>94.00574</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -11152,7 +11152,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>7</variableId>
+          <variableId>9</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -11196,7 +11196,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>7</variableId>
+          <variableId>9</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -11240,7 +11240,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>7</variableId>
+          <variableId>9</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -11284,7 +11284,7 @@ the Dialoguer system!</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>String</variableType>
-          <variableId>7</variableId>
+          <variableId>9</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>90</y>
@@ -12124,7 +12124,7 @@ the Dialoguer system!</text>
           <id>1</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>hasPObjectPicture</name>
+          <name>hasPObjectPhoto</name>
           <variable>false</variable>
           <id>2</id>
         </DialogueEditorVariableObject>
@@ -12184,52 +12184,52 @@ the Dialoguer system!</text>
           <id>0</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Josh_Witness_Category</name>
+          <name>Liam_Witness_Category</name>
           <variable>nothing</variable>
           <id>1</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Josh_Alibi</name>
+          <name>Liam_Alibi</name>
           <variable>nowhere</variable>
           <id>2</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Liam_Witness_Category</name>
+          <name>Nina_Witness_Category</name>
           <variable>nothing</variable>
           <id>3</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Liam_Alibi</name>
+          <name>Nina_Alibi</name>
           <variable>nowhere</variable>
           <id>4</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Nina_Witness_Category</name>
+          <name>Josh_Witness_Category</name>
           <variable>nothing</variable>
           <id>5</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Nina_Alibi</name>
+          <name>Josh_Alibi</name>
           <variable>nowhere</variable>
           <id>6</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Carlos_Witness_Category</name>
+          <name>Noel_Witness_Category</name>
           <variable>nothing</variable>
           <id>7</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Noel_Witness_Category</name>
+          <name>Peijun_Witness_Category</name>
           <variable>nothing</variable>
           <id>8</id>
         </DialogueEditorVariableObject>
         <DialogueEditorVariableObject>
-          <name>Peijun_Witness_Category</name>
+          <name>Carlos_Witness_Category</name>
           <variable>nothing</variable>
           <id>9</id>
         </DialogueEditorVariableObject>
       </variables>
-      <selection>0</selection>
+      <selection>9</selection>
     </strings>
   </globals>
   <themes>
