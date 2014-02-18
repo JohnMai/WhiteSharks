@@ -19,8 +19,8 @@ public class journal : MonoBehaviour {
 		}
 	}
 
-	public List<NPC> personsOfInterest;
-	public ArrayList weaponList;
+	private List<NPC> personsOfInterest;
+	private ArrayList weaponList;
 
 	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
@@ -31,25 +31,34 @@ public class journal : MonoBehaviour {
 	public GameObject viewTab2;
 	public GameObject viewTab3;
 
+	//Grab two main journal activation buttons and boolean to check when in menu.
+	public GameObject journalButton;
+	public GameObject accusationRoomButton;
+	private bool inMenu;
+
 	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
 	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
-	public static List<GameObject> objectButtonList;
-	
-	public GameObject poiButtonGrid;
-	public UI2DSprite poiPortrait;
-	public GameObject objectGrid;
+	private static List<GameObject> objectButtonList;
 
-	public UILabel nameLabel;
+	public GameObject poiButtonGrid;
+	public GameObject objectButtonGrid;
+	public UI2DSprite poiPortrait;
+
+	//Buttons for accusation panel.
+	private static List<GameObject> suspectButtonList;
+	private static List<GameObject> weaponButtonList;
+	private static List<GameObject> mapButtonList;
+
+	public GameObject suspectGrid;
+
 	public UILabel descriptionLabel;
 	public UILabel panelNameLabel;
 	public UILabel timeLabel;
-	
-	public GameObject poiView;
-	public GameObject mapView;
 
 	//Destroys duplicate UI Roots.
 	void Awake () {
+		//journalButton.transform.position = new Vector3(275, 20, 0);
 		if(!j){
 			j = this;
 			DontDestroyOnLoad(gameObject);
@@ -60,6 +69,8 @@ public class journal : MonoBehaviour {
 	}
 	
 	void Start () {
+		////----    Journal Panel Init    ----//////////////////////////////////////////////////////
+
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
@@ -69,11 +80,15 @@ public class journal : MonoBehaviour {
 		//Weapon list once that's ready.
 		//weaponList = GameManager.weaponList;
 
-
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
 		UIEventListener.Get (viewTab3).onClick += this.onClick;
+
+		//Listens for journal/accusation room buttons to make sure only one is active at a time.
+		UIEventListener.Get (journalButton).onClick += this.journalActivationRoomToggle;
+		UIEventListener.Get (accusationRoomButton).onClick += this.journalActivationRoomToggle;
+
 		//Want to get rid of this too.
 		viewTabList = new List<GameObject>();
 		viewTabList.Add(viewTab1);
@@ -84,10 +99,14 @@ public class journal : MonoBehaviour {
 		poiButtonList = new List<GameObject>();
 		objectButtonList = new List<GameObject>();
 
+		changeView(0);
 		initPoIView ();
-		initObjView ();
-		changeView (0);
+		//initObjView ();
 		StartCoroutine (UpdateTime ());
+
+		////----    Accusation Panel Init    ----//////////////////////////////////////////////////////
+		suspectButtonList = new List<GameObject>();
+		initAccusationPanel();
 	}
 
 	//Single onclick function for any button in the journal.
@@ -106,44 +125,58 @@ public class journal : MonoBehaviour {
 		}
 	}
 
+	void journalActivationRoomToggle(GameObject button){
+		if (button == journalButton){
+			if (inMenu){
+				accusationRoomButton.SetActive(true);
+				inMenu = false;
+			}
+			else {
+				accusationRoomButton.SetActive(false);
+				inMenu = true;
+			}
+		}
+		else if (button == accusationRoomButton){
+			if (inMenu){
+				journalButton.SetActive(true);
+				inMenu = false;
+			}
+			else {
+				journalButton.SetActive(false);
+				inMenu = true;
+			}
+		}
+	}
+
 	//----- Button type functions
 	//Changes view when view tab is clicked.
 	//Will make helper function for grid/view SetActive.
 	void changeView(int viewNumber){
+		clearLabels ();
 		switch (viewNumber) {
 			case 0://PoI
-				mapView.SetActive(false);
-				poiView.SetActive(true);
-				objectGrid.SetActive(false);
-				//poiGrid.SetActive(true);
+				//mapView.SetActive(false);
+				//poiView.SetActive(true);
+				objectButtonGrid.SetActive(false);
+				poiButtonGrid.SetActive(true);
 				break;
 			case 1://Object
-				mapView.SetActive (false);
-				poiView.SetActive(true);
-				objectGrid.SetActive(true);
-				//poiGrid.SetActive(false);
+				//mapView.SetActive (false);
+				//poiView.SetActive(true);
+				objectButtonGrid.SetActive(true);
+				poiButtonGrid.SetActive(false);
 				break;
 			case 2://Map
-				mapView.SetActive (true);
-				poiView.SetActive(false);
-				objectGrid.SetActive(false);
-				//poiGrid.SetActive(false);
+				//mapView.SetActive (true);
+				//poiView.SetActive(false);
+				objectButtonGrid.SetActive(false);
+				poiButtonGrid.SetActive(false);
 				break;
 		}
-		clearLabels ();
 	}
 
 	//Changes PoI when a PoI portrait is clicked.
 	void changePOI(int poiNumber){
-		//Sprint 1 change POI code.
-		/*if(personsOfInterest[poiNumber].isVisible()){
-			nameLabel.text = personsOfInterest[poiNumber].getElementName();
-			descriptionLabel.text = personsOfInterest[poiNumber].getDescription();
-		}
-		else {
-			nameLabel.text = emptyName; 
-			descriptionLabel.text = emptyName;
-		}*/
 		//Sprint 2 change POI code.
 		if (personsOfInterest [poiNumber].isVisible ()) {
 			descriptionLabel.text = personsOfInterest[poiNumber].getDescription();
@@ -157,35 +190,10 @@ public class journal : MonoBehaviour {
 
 	//Changes object/weapon being viewed when portrait is clicked.
 	void changeObject(int objectNumber){
-		//Code for grabbing weapon names and descriptions.
-		/*if(weaponList[objectNumber].isVisible()){
-			nameLabel.text = weaponList[objectNumber].getElementName();
-			descriptionLabel.text = weaponList[objectNumber].getDescription();
-		}
-		else {
-			nameLabel.text = emptyName; 
-			descriptionLabel.text = emptyName;
-		}*/
+
 	}
 
 	//Initialize PoI view. 
-	//Code for sprint 1 journal.
-	/*public void initPoIView(){
-		//Add buttons to poi button list and put them in UI event listener.
-		foreach (Transform child in poiGrid.transform){
-			UIEventListener.Get(child.gameObject).onClick += this.onClick;
-			poiButtonList.Add(child.gameObject);
-		}
-
-		for (int i = 0; i < personsOfInterest.Count; i++) {
-			if(personsOfInterest[i] != null){
-				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
-			}
-			else {
-				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = emptyPortrait;
-			}
-		}
-	}*/
 	//Code for sprint 2 journal.
 	public void initPoIView(){
 		//Add buttons to poi button list and put them in UI event listener.
@@ -210,7 +218,7 @@ public class journal : MonoBehaviour {
 	//Initialize obj view.
 	public void initObjView(){
 		//Add buttons to obj button list and put them in UI event listener.
-		foreach (Transform child in objectGrid.transform){
+		foreach (Transform child in objectButtonGrid.transform){
 			UIEventListener.Get(child.gameObject).onClick += this.onClick;
 			objectButtonList.Add(child.gameObject);
 		}
@@ -218,10 +226,11 @@ public class journal : MonoBehaviour {
 
 	//Clear description labels. Might rename and add obj/poi grid on/off.
 	void clearLabels(){
-		nameLabel.text = "";
+		panelNameLabel.text = "";
 		descriptionLabel.text = "";
 	}
 
+	//Keeps time.
 	IEnumerator UpdateTime(){
 		while (true) {
 			DateTime currentTime = System.DateTime.Now;
@@ -239,5 +248,23 @@ public class journal : MonoBehaviour {
 		//A stub because I dont' know what this is.
 		Dictionary pk = new Dictionary();
 		return pk;
+	}
+
+	////----    Accusation Panel    ----////////////////////////////////////////////////////
+	void initAccusationPanel(){
+		Debug.Log ("init");
+		foreach(Transform child in suspectGrid.transform){
+			UIEventListener.Get(child.gameObject).onClick += this.accusationOnClick;
+			suspectButtonList.Add (child.gameObject);
+		}
+
+		for (int i = 0; i < suspectButtonList.Count; i++){
+			suspectButtonList[i].GetComponentInChildren<UILabel>().text = personsOfInterest[i].getElementName();
+			suspectButtonList[i].GetComponentInChildren<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
+		}
+	}
+
+	void accusationOnClick(GameObject button){
+		Debug.Log ("here");
 	}
 }
