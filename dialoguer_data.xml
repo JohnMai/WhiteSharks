@@ -2346,8 +2346,8 @@ the Dialoguer system!</text>
       <name>Liam O'Shea</name>
       <startPage>21</startPage>
       <scrollPosition>
-        <x>420.025635</x>
-        <y>1074.045</y>
+        <x>0</x>
+        <y>2032.10291</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4181,7 +4181,7 @@ the Dialoguer system!</text>
           <variableId>2</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>186.010742</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -4404,7 +4404,7 @@ the Dialoguer system!</text>
           <variableId>4</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>66.00403</y>
+            <y>160.009766</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -4550,7 +4550,7 @@ the Dialoguer system!</text>
             <y>1965.0979</y>
           </position>
           <outs>
-            <int>1</int>
+            <int>50</int>
             <int>39</int>
           </outs>
           <advanced>false</advanced>
@@ -4580,7 +4580,7 @@ the Dialoguer system!</text>
           <variableId>6</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>80.00488</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -4595,7 +4595,7 @@ the Dialoguer system!</text>
             <y>1995.0979</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>1</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6792,8 +6792,8 @@ the Dialoguer system!</text>
       <name>Josh Susach</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>766.0449</x>
-        <y>2630.04</y>
+        <x>682.036133</x>
+        <y>1302.99426</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7032,7 +7032,7 @@ the Dialoguer system!</text>
             <int>25</int>
             <int>27</int>
             <int>29</int>
-            <int xsi:nil="true" />
+            <int>31</int>
             <int>7</int>
           </outs>
           <advanced>false</advanced>
@@ -8194,8 +8194,8 @@ the Dialoguer system!</text>
           <id>31</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>933.040039</x>
-            <y>2488.03931</y>
+            <x>920.040039</x>
+            <y>2476.03931</y>
           </position>
           <outs>
             <int>32</int>
@@ -8582,7 +8582,7 @@ the Dialoguer system!</text>
           <variableId>14</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>252.015381</y>
+            <y>235.988037</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -10598,8 +10598,8 @@ the Dialoguer system!</text>
       <name>Peijun Shi</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>1302.99426</y>
+        <x>120.007324</x>
+        <y>466.9463</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12004,7 +12004,7 @@ the Dialoguer system!</text>
             <y>979.0381</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>7</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -14488,5 +14488,5 @@ the Dialoguer system!</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>4</currentDialogueId>
+  <currentDialogueId>8</currentDialogueId>
 </DialogueEditorMasterObject>
