@@ -13,6 +13,30 @@ Booleans:
 1 = hasPObjectHallPass
 2 = hasPObjectPicture
 3 = hasPObjectBracelet
+4 = LiamHarass
+5 = LiamFlatter
+6 = LiamHistory
+7 = LiamPObject
+8 = NinaHarass
+9 = NinaFlatter
+10 = NinaHistory
+11 = NinaPObject
+12 = JoshHarass
+13 = JoshFlatter
+14 = JoshHistory
+15 = JoshPObject
+16 = NoelHarass
+17 = NoelFlatter
+18 = NoelHistory
+19 = NoelPObject
+20 = PeijunHarass
+21 = PeijunFlatter
+22 = PeijunHistory
+23 = PeijunPObject
+24 = CarlosHarass
+25 = CarlosFlatter
+26 = CarlosHistory
+27 = CarlosPObject
 
 Floats:
 1 = Liam_trustVal
