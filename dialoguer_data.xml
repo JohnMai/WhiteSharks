@@ -120,8 +120,8 @@ We got your disease</text>
       <name>Frank+Partner 1</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>158.010254</x>
+        <y>1697</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -267,7 +267,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>We have to go! What’s taking so long?</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -399,7 +399,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I KNOW! It’s just that… ARGH!</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -445,7 +445,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>What?!</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -534,7 +534,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I just ripped off my skin taking this thing off. Let’s go!</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -625,7 +625,7 @@ We got your disease</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>108.006592</x>
-        <y>0</y>
+        <y>274.005859</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -771,7 +771,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Can you open the room for me? My arm hurts. It’s room 10.</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -861,8 +861,8 @@ We got your disease</text>
       <name>Frank + Partner 3</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>168.0127</x>
-        <y>2208.131</y>
+        <x>226.016846</x>
+        <y>2442.14844</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1008,7 +1008,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Are you ok? That’s gonna leave a nasty scar.</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1097,7 +1097,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I’ll be fine, I don’t even feel it right now.</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1143,7 +1143,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>At least I won’t have to worry about being tracked anymore. ha ha…</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1189,7 +1189,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I need a smoke break.</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1278,7 +1278,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Wait a second! Didn’t you quit two years ago?</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1367,7 +1367,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Did I?...You think its safe outside?</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1456,7 +1456,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I hope you’re joking.</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1545,7 +1545,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Come on, just this once?</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1634,7 +1634,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I don’t think that’s the main problem here.</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1723,7 +1723,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>I’ll be right back.</text>
-          <name />
+          <name>Chase</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1812,7 +1812,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Don’t- </text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1901,7 +1901,7 @@ We got your disease</text>
           <advanced>true</advanced>
           <metadata />
           <text>Whatever. Do your thing, I’m feeling a bit dizzy.</text>
-          <name />
+          <name>Frank</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2034,24 +2034,154 @@ We got your disease</text>
       <name>Jane + Shammy 1</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>3.99902344</x>
         <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
           <id>0</id>
-          <type>TextPhase</type>
+          <type>SetVariablePhase</type>
           <position>
-            <x>14</x>
-            <y>93</y>
+            <x>233</x>
+            <y>20</y>
           </position>
           <outs>
             <int>1</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>Shammy introduces the player, I mean Jane, to a new day at her detective agency.</text>
-          <name />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Float</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>5</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>1</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>547</x>
+            <y>21</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Float</variableType>
+          <variableId>1</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>1</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>2</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>348</x>
+            <y>328</y>
+          </position>
+          <outs>
+            <int>3</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>3</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>662</x>
+            <y>332</y>
+          </position>
+          <outs>
+            <int>4</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Welcome detective! Do you require my assistance?</text>
+          <name>Shammy</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2084,11 +2214,189 @@ We got your disease</text>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>1</id>
+          <id>4</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>354</x>
+            <y>797</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>false</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>5</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>664</x>
+            <y>799</y>
+          </position>
+          <outs>
+            <int>7</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>No. I can see my office from here, thanks.</text>
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>664</x>
+            <y>1249</y>
+          </position>
+          <outs>
+            <int>8</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Alright then, have a great day detective!</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>7</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>344</x>
+            <y>1243.01123</y>
+          </position>
+          <outs>
+            <int>6</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>8</id>
           <type>EndPhase</type>
           <position>
-            <x>338</x>
-            <y>108</y>
+            <x>981.001465</x>
+            <y>1270</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -4128,5 +4436,5 @@ We got your disease</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>3</currentDialogueId>
+  <currentDialogueId>1</currentDialogueId>
 </DialogueEditorMasterObject>
