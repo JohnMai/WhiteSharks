@@ -56,6 +56,7 @@ public class NPC : CaseElement {
 
 	public void startDialogue(){
 
+		Debug.Log (Dialoguer.GetGlobalBoolean (1));
 		Dialoguer.StartDialogue((int)myConvo);
 		player.stopMove();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -81,12 +82,5 @@ public class NPC : CaseElement {
 		if (player.canWalk == true && clickedOnSomething)
 				if (pDist.isCloseEnough (player.transform.position))
 						startDialogue ();
-
-		SpriteRenderer r = GetComponent<SpriteRenderer> ();
-		if (GameManager.firstTimeOffice && !this.name.Equals("Shammy")) {
-						r.color = Color.black;		
-				} else {
-			r.color = Color.white;		
-		}
 	}
 }

@@ -5,18 +5,19 @@ public class genericScene : MonoBehaviour {
 	//Implement when dialoguer/animation ends, go to first scene.
 
 	public string debugMe;
+	public bool autoPlay;
 	public AudioClip playMe;
 	public float waitThisLong;
 	public string whatCharacter;
 	public string nextLevel;
-	public bool isTherePlayer;
+	public bool isTherePlayer = false;
 	public Vector2 spawnHereAfter;
 	public string dialoguer = "chapter1";
 
-	private bool done = false;
+	protected bool done = false;
 	public bool needGUI = false;
 	public Convo[] dialogue;
-	private int curDia = 0;
+	protected int curDia = 0;
 
 	public int setOffset;
 	
@@ -26,9 +27,9 @@ public class genericScene : MonoBehaviour {
 		if (GameManager.offset == 0)
 			GameManager.offset = setOffset;
 
-		if (Dialoguer.isInitialized ())
+		if (Dialoguer.isInitialized () && autoPlay)
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
-		else {
+		else if (autoPlay) {
 			
 			Dialoguer.Initialize(dialoguer);
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
@@ -39,15 +40,15 @@ public class genericScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		StartCoroutine ("wait");
-		Debug.Log ("ALIVE");
+		//Debug.Log ("ALIVE");
 
 	}
 
 	void OnGUI() {
 		if (needGUI) {
-			GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DIALOGUER CONVERSATION FOR BRAIN ROOM.");
+				//GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DIALOGUER CONVERSATION FOR BRAIN ROOM.");
 			if (done) {
-					GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DONE.");
+				//GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DONE.");
 			}
 		}
 	}
@@ -67,9 +68,13 @@ public class genericScene : MonoBehaviour {
 			GameManager.Instance.playerInScene = isTherePlayer;
 			done = true;
 			if (isTherePlayer) {
-					GameManager.Instance.SetMainCharacter (whatCharacter);
-					GameManager.Instance.SetNextX (spawnHereAfter.x);
-					GameManager.Instance.SetNextX (spawnHereAfter.y);
+				if (!GameManager.Instance.playerInScene){
+					GameManager.Instance.playerInScene = true;
+				}
+				Debug.Log("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+				GameManager.Instance.SetMainCharacter (whatCharacter);
+				GameManager.Instance.SetNextX (spawnHereAfter.x);
+				GameManager.Instance.SetNextY (spawnHereAfter.y);
 			}
 			GameManager.dialogueJustFinished = false;
 			Application.LoadLevel (nextLevel);

@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,8 +60,6 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  category: 3
-  myEnumName: 0
   offset: 0
   mouseOverIcon: Grab_Icon
 --- !u!114 &11400002
@@ -97,7 +95,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 41e1df6964cbb4c0099f165216194b7e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f08c79b37de4846779c6874efaa0cae1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

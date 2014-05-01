@@ -6,8 +6,8 @@
       <name>Opening Narration</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>178.011475</x>
+        <y>224.01062</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -108,7 +108,7 @@
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>White Shark has always been more than a place, a corporation, a collective. White shark is an idea, it's the dream of a great man who was able to envision the future of mankind and make its most promising elements sail towards it in our great white.</text>
+          <text>White Shark has always been more than a place, a corporation, a collective. </text>
           <name />
           <portrait />
           <audio />
@@ -145,15 +145,15 @@
           <id>3</id>
           <type>TextPhase</type>
           <position>
-            <x>362</x>
-            <y>322</y>
+            <x>67</x>
+            <y>466</y>
           </position>
           <outs>
             <int>4</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>We are not just the future, we're the present and the past. Thanks to our advanced level of security, we have been able to keep safe secrets from every country at times of war, managing to keep peace between them.</text>
+          <text>White shark is an idea,</text>
           <name />
           <portrait />
           <audio />
@@ -190,15 +190,15 @@
           <id>4</id>
           <type>TextPhase</type>
           <position>
-            <x>678</x>
-            <y>322</y>
+            <x>101</x>
+            <y>625</y>
           </position>
           <outs>
-            <int>5</int>
+            <int>6</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>We have the most advanced equipment, the most prepared individuals working together. The dream of our Founder made reality.</text>
+          <text>it's the dream of a great man who was able to envision the future of mankind</text>
           <name />
           <portrait />
           <audio />
@@ -270,6 +270,231 @@
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>TextPhase</type>
+          <position>
+            <x>396</x>
+            <y>339</y>
+          </position>
+          <outs>
+            <int>9</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>and make its most promising elements sail towards it in our great white.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>7</id>
+          <type>TextPhase</type>
+          <position>
+            <x>781</x>
+            <y>606</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>The dream of our Founder made reality.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>8</id>
+          <type>TextPhase</type>
+          <position>
+            <x>438</x>
+            <y>738</y>
+          </position>
+          <outs>
+            <int xsi:nil="true" />
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>Thanks to our advanced level of security, we have been able to keep safe secrets from every country at times of war, managing to keep peace between them.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>9</id>
+          <type>TextPhase</type>
+          <position>
+            <x>419</x>
+            <y>489</y>
+          </position>
+          <outs>
+            <int>10</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>We are not just the future, we're the present and the past. </text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>10</id>
+          <type>TextPhase</type>
+          <position>
+            <x>771.002441</x>
+            <y>323.009766</y>
+          </position>
+          <outs>
+            <int>7</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>We have the most advanced equipment, the most prepared individuals working together. </text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -286,11 +511,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>1</id>
-      <name>Frank+Partner 1</name>
+      <name>Frank and Partner one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>252.015381</x>
+        <y>614.9346</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -790,11 +1015,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>2</id>
-      <name>Frank + Partner 2</name>
+      <name>Frank and Partner two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>8.000488</x>
-        <y>0</y>
+        <x>132.008057</x>
+        <y>274.005859</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1027,11 +1252,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>3</id>
-      <name>Frank + Partner 3</name>
+      <name>Frank and Partner three</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>286.018066</x>
-        <y>5094.31055</y>
+        <x>92.0062256</x>
+        <y>5334.32227</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1311,7 +1536,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I'm just glad we're no one's left on our tail, haha...</text>
+          <text>I'm just glad no one's left on our tail, haha...</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -1427,7 +1652,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -2200,10 +2425,10 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>4</id>
-      <name>Jane + Shammy 1</name>
+      <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1010.05261</x>
+        <x>780.037964</x>
         <y>2004.00488</y>
       </scrollPosition>
       <phases>
@@ -3505,7 +3730,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>5</id>
-      <name>Noel + Alexia</name>
+      <name>Noel and Alexia</name>
       <startPage>1</startPage>
       <scrollPosition>
         <x>52.0031738</x>
@@ -4098,7 +4323,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>6</id>
-      <name>Jane + Alexia 1</name>
+      <name>Jane and Alexia one</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -5047,11 +5272,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>7</id>
-      <name>Jane + Noel 1</name>
+      <name>Jane and Noel one</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>572.0349</y>
+        <y>40.9960938</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5416,11 +5641,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>8</id>
-      <name>Jane + Nina</name>
+      <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>944.0637</x>
-        <y>4198.096</y>
+        <x>796.0486</x>
+        <y>644.0375</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5550,7 +5775,7 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>true</variableSetValue>
+          <variableSetValue>false</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
@@ -5558,8 +5783,8 @@
           <id>3</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>342.002441</x>
-            <y>661</y>
+            <x>246.002441</x>
+            <y>663</y>
           </position>
           <outs>
             <int>4</int>
@@ -5602,8 +5827,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>664.002441</x>
-            <y>661</y>
+            <x>635.002441</x>
+            <y>707</y>
           </position>
           <outs>
             <int>5</int>
@@ -5647,8 +5872,8 @@
           <id>5</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>345.010254</x>
-            <y>1113</y>
+            <x>100.010254</x>
+            <y>1115</y>
           </position>
           <outs>
             <int>6</int>
@@ -5680,7 +5905,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -6046,7 +6271,7 @@
             <y>1122.0354</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>15</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6891,7 +7116,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>9</id>
-      <name>Jane + Liam</name>
+      <name>Jane and Liam</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>32.0019531</x>
@@ -7217,7 +7442,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>10</id>
-      <name>Jane + Noel 2</name>
+      <name>Jane and Noel two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -7454,7 +7679,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>11</id>
-      <name>Jane + Noel 3</name>
+      <name>Jane and Noel three</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -7691,11 +7916,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>12</id>
-      <name>Jane + May</name>
+      <name>Jane and May</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>168.010254</x>
-        <y>5242.01855</y>
+        <x>130.007935</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8735,7 +8960,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>13</id>
-      <name>Jane + Alexia 2</name>
+      <name>Jane and Alexia two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>236.0144</x>
@@ -10667,11 +10892,11 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>14</id>
-      <name>Jane + Noel 4</name>
+      <name>Jane and Noel four</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>2259.999</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -11110,7 +11335,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -11392,7 +11617,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>15</id>
-      <name>Jane + Shammy 2</name>
+      <name>Jane and Shammy two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>18.98999</x>
@@ -11718,7 +11943,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>16</id>
-      <name>Jane + cute box</name>
+      <name>Jane and cute box</name>
       <startPage>4</startPage>
       <scrollPosition>
         <x>0</x>
@@ -11955,7 +12180,7 @@
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>17</id>
-      <name>Jane + Nina's phone</name>
+      <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -14775,7 +15000,7 @@ out the files.</text>
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>24</id>
-      <name>Jane + Shammy Case</name>
+      <name>Jane and Shammy Case</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -15123,7 +15348,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>56.00464</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16308,7 +16533,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>201</y>
+        <y>70</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16782,7 +17007,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>206</y>
+        <y>75</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17019,7 +17244,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>66.00342</x>
-        <y>136.0083</y>
+        <y>81</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
