@@ -78,13 +78,18 @@ public class SoundManager : MonoBehaviour {
 
 	public void StopWalk() {
 		isWalking = false;
-		walkNoise.audio.Stop();
-		Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/HeelsStep"), SoundType.Sfx);
+		if (walkNoise != null) {
+						walkNoise.audio.Stop ();
+						Play2DSound ((AudioClip)Resources.Load ("Sounds/SoundEffects/HeelsStep"), SoundType.Sfx);
+				}
 	}
 
 	public void CantWalk() {
 		canWalk = false;
-		walkNoise.audio.Stop();
+		if (walkNoise != null)
+		{
+			walkNoise.audio.Stop();
+		}
 	}
 
 	public void CanWalk() {

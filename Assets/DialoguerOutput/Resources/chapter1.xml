@@ -5966,8 +5966,8 @@
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>128.937866</x>
-        <y>0</y>
+        <x>812.8014</x>
+        <y>469.8001</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6060,12 +6060,12 @@
           <id>2</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>417</x>
-            <y>326</y>
+            <x>478</x>
+            <y>332</y>
           </position>
           <outs>
-            <int>3</int>
             <int>12</int>
+            <int>3</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -7441,8 +7441,8 @@
       <name>Jane and Liam</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>706.0021</y>
+        <x>40.0473976</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7587,7 +7587,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I seriously hate these lockdowns. You’ve made me miss my shift, and that’s going to cost me a lot of overtime. I’m obviously innocent, we all work for the same people here. Can you please excuse me?</text>
+          <text>I seriously hate these lockdowns.</text>
           <name>Liam O'Shea</name>
           <portrait />
           <audio />
@@ -7859,7 +7859,7 @@
       <name>Jane and Noel two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>299.834076</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -8006,7 +8006,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>In case you weren’t aware, this place is on lockdown until we’re done. If I were you, I’d make sure I’ve got everything.</text>
-          <name />
+          <name>Noel Alt</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8097,7 +8097,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>195</y>
+        <y>76</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8243,7 +8243,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>It seems you’ve searched the place high and low. Let’s report back to Alexia.</text>
-          <name />
+          <name>Noel Alt</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -17842,6 +17842,114 @@ out the files.</text>
           <position>
             <x>895</x>
             <y>260</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+      </phases>
+      <floats>
+        <variables />
+        <selection>0</selection>
+      </floats>
+      <strings>
+        <variables />
+        <selection>0</selection>
+      </strings>
+      <booleans>
+        <variables />
+        <selection>0</selection>
+      </booleans>
+    </DialogueEditorDialogueObject>
+    <DialogueEditorDialogueObject>
+      <id>35</id>
+      <name>Projector</name>
+      <startPage>0</startPage>
+      <scrollPosition>
+        <x>0</x>
+        <y>0</y>
+      </scrollPosition>
+      <phases>
+        <DialogueEditorPhaseObject>
+          <id>0</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>177</x>
+            <y>10</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Each terminal uses projectors to display Shammy's image. How old fashioned.</text>
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>1</id>
+          <type>EndPhase</type>
+          <position>
+            <x>504</x>
+            <y>13</y>
           </position>
           <outs />
           <advanced>false</advanced>
