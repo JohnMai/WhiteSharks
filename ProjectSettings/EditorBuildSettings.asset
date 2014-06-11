@@ -65,7 +65,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finofficeend.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 1/0 Intro/chapter1introtransition.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Chapter 1/Chapter/chapter1outrotransition.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 2/chapter2bellyalleyprefranksroom.unity
@@ -109,7 +109,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2/chapter2introtransition.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 2/chapter2bellyallypostpeijunpassingthrough.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Chapter 2/chapter2outrotransition.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 3/chapter3bellyalleybeforepeijun.unity
