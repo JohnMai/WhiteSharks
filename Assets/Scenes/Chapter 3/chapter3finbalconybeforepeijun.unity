@@ -2927,7 +2927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: d818d97c75052d1428278fd2d7e40a9e, type: 3}
+  audioClip: {fileID: 0}
   trigger: 0
   volume: 1
   pitch: 1
@@ -8399,8 +8399,8 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: 2
   minY: -2
-  minScale: .349999994
-  maxScale: .899999976
+  minScale: .449999988
+  maxScale: 1.20000005
   baseSpeed: 4
   placeTop: 0
 --- !u!1 &1628573626
