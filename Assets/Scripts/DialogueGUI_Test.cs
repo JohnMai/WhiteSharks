@@ -349,13 +349,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		}
 		
 		updatePortraits();
-		
-		# region test things
-		if (Input.GetKeyUp (KeyCode.F))
-		{
-			Dialoguer.EndDialogue();
-		}
-		#endregion
 	}
 	
 	private void setScaleFull()

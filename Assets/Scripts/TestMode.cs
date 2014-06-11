@@ -8,26 +8,26 @@ public class TestMode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Alpha2)) {
-			debugMode = new MainMenu("chapter2introtransition");
-			ready = true;
-		}
-		else if (Input.GetKey (KeyCode.Alpha1)) {
-			debugMode = new MainMenu("chapter1introtransition");
-			ready = true;
-		}
-		else if (Input.GetKey (KeyCode.Alpha3)) {
-			debugMode = new MainMenu("chapter3introtransition");
-			ready = true;
-		}else if (Input.GetKey (KeyCode.Alpha4)) {
-			debugMode = new MainMenu("chapter4introtransition");
-			ready = true;
-		}
-
-
-		if (ready == true) {
-			debugMode.startGame();		
-		}
+//		if (Input.GetKey (KeyCode.Alpha2)) {
+//			debugMode = new MainMenu("chapter2introtransition");
+//			ready = true;
+//		}
+//		else if (Input.GetKey (KeyCode.Alpha1)) {
+//			debugMode = new MainMenu("chapter1introtransition");
+//			ready = true;
+//		}
+//		else if (Input.GetKey (KeyCode.Alpha3)) {
+//			debugMode = new MainMenu("chapter3introtransition");
+//			ready = true;
+//		}else if (Input.GetKey (KeyCode.Alpha4)) {
+//			debugMode = new MainMenu("chapter4introtransition");
+//			ready = true;
+//		}
+//
+//
+//		if (ready == true) {
+//			debugMode.startGame();		
+//		}
 	
 	}
 
